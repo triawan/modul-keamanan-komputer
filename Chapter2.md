@@ -1,2 +1,2 @@
-# Bab 2 - Tutorial Menggunakan Wireshark
+# Tutorial Menggunakan Wireshark
 
