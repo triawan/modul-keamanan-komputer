@@ -47,11 +47,37 @@ Beberapa fungsi yang terdapat pada method socket adalah sebagai berikut:
 * socket.send(bytes): Method ini digunakan untuk mengirimkan data ke socket. Sebelum mengirim data, pastikan bahwa socket sudah terhubung ke mesin. Method ini akan mengembalikan jumlah byte yang terkirim.
 * socket.sendto(data, address): Method ini digunakan untuk mengirim data ke socket. Secara umum, method ini menggunakan UDP. UDP merupakan protocol yang bersifat connectionless (tidak memperdulikan apakah paket sudah terkirim atau belum yang penting sudah dikirimkan oleh si pengirim (server/client)).
 * socket.sendall(data): Method ini akan mengirimkan semua data ke socket
+ 
 
+Berikut ini terdapat kode program client server sederhana:
 
+Nama file : ```serverku.py```
 
+```
+import socket
+host = "192.168.10.10" 
+port = 12345 
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind((host,port)) 
+s.listen(2)
+conn, addr = s.accept()
+print addr, "Selamat Anda Sudah Terhubung dengan Serverku.py"
+conn.send("Terima Kasih karena telah berkomunikasi dengan Serverku.py")
+conn.close()
+```
 
+Nama file : ```clientku.py```
 
+```
+import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+host = "192.168.10.10" 
+port =12345 
+s.connect((host,port))
+print s.recv(1024)
+s.send("Hai Serverku.py, Clientku.py ingin berkomunikasi")
+s.close()
+```
 
 
 
