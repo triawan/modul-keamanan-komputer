@@ -263,4 +263,4 @@ Pada gambar 5.2, tampilan gui nya tidak tercapture. Tampilan gui hanya digunakan
 
 ## Tugas Praktikum
 
-Berdasarkan kode program port scanning tersebut. Masing-masing mahasiswa silakan mencoba melakukan port scanning terhadap alamat ip tertentu (bisa juga alamat ip komputer anda) sehingg
+Berdasarkan kode program port scanning tersebut. Setiap mahasiswa silakan mencoba melakukan port scanning terhadap alamat ip tertentu (bisa juga alamat ip komputer anda) sehingga dapat mengetahui port apa saja yang terbuka. Kumpulkan dalam bentuk softcopy yang terdiri dari review program dan tampilan output program.
