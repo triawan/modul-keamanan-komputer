@@ -40,6 +40,11 @@ socket.connect(address): Method ini untuk menghubungkan client ke server. Argume
 
 Beberapa fungsi yang terdapat pada method socket adalah sebagai berikut:
 
+* socket.recv(bufsize): Method ini menerima pesan TCP dari socket. Argumen bufsize mendefinisikan jumlah data maksimum yang dapat diterima dalam suatu waktu.
+* socket.recvfrom(bufsize): Method ini menerima data dari socket. Method ini akan mengembalikan sepasang nilai, nilai pertama akan memberikan informasi penerimaan data, nilai kedua akan memberikan alamat socket untuk melakukan pengiriman data
+* socket.recv_into(buffer): Method ini menerima data kurang dari atau sama dengan argumen buffer. Parameter buffer dibuat oleh method bytearray()
+* socket.recvfrom_into(buffer): Method ini me
+
 
 
 
