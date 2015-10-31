@@ -19,8 +19,14 @@ Deskripsi parameter dari fungsi socket diatas adalah sebagai berikut:
 * PF_PACKET merupakan device driver layer. Umumnya merupakan library pcap yang digunakan pada linux.
 
 
-## Cara Kerja Method Server Socket
+## Cara Kerja Method Socket Server 
 
-Dalam konsep arsitektur client-server, 
+Dalam konsep arsitektur client-server, terdapat dua layanan yang berbeda dari masing-masing perangkat. Server bertugas secara terpusat untuk memberikan service/layanan yang diminta oleh client. Sedangkan client bertugas untuk mengirimkan permintaan dan menerima layanan dari server.
+
+Beberapa metode pada fungsi socket di python, yaitu:
+* socket.bind(address): Method ini digunakan untuk menghubungkan alamat ip dengan nomor port ke socket. Socket harus dibuka dahulu sebelum terhubung dengan alamat tersebut.
+* socket.listen(q): Method ini akan memulai fase mendengarkan koneksi TCP. Argumen q mendefinisikan jumlah koneksi maksimum yang dapat ditangani server.
+* socket.accept(): Penggunaan method ini adalah untuk menerima koneksi yang dikirim dari client.
+
 
 
