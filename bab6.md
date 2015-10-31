@@ -44,7 +44,7 @@ Beberapa fungsi yang terdapat pada method socket adalah sebagai berikut:
 * socket.recvfrom(bufsize): Method ini menerima data dari socket. Method ini akan mengembalikan sepasang nilai, nilai pertama akan memberikan informasi penerimaan data, nilai kedua akan memberikan alamat socket untuk melakukan pengiriman data
 * socket.recv_into(buffer): Method ini menerima data kurang dari atau sama dengan argumen buffer. Parameter buffer dibuat oleh method bytearray()
 * socket.recvfrom_into(buffer): Method ini mempunyai data dari socket dan mengirimkan melalui buffer. Nilai kembalian adalah nbytes dan address, dimana nbytes adalah jumlah bytes yang diterima, dan address adalah alamat socket pada saat mengirim data.
-* socket.send(bytes): Method ini
+* socket.send(bytes): Method ini digunakan untuk mengirimkan data ke socket. Sebelum mengirim data, pastikan bahwa socket sudah terhubung ke mesin. Method ini akan mengembalikan jumlah byte yang terkirim.
 
 
 
