@@ -222,7 +222,7 @@ Pada gambar 5.1 tersebut, terdapat keterangan port tertentu yang terbuka dari su
 
 Berikut ini terdapat kode program lainnya untuk melakukan port scanning berbasis GUI:
 
-Nama File : guiportscan
+Nama File : ```guiportscan.py```
 ```
 from socket import *
 from Tkinter import *
