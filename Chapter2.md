@@ -58,5 +58,6 @@ Sementara pada OS windows, dapat melakukan dengan cara klik kanan program wiresh
 
 
 ## Tugas Praktikum
+
 1. Setelah dapat menggunakan wireshark dan paham tentang fungsi-fungsi dasar wireshark, silakan Anda capture paket data kemudian simpan dalam bentuk file .pcap , masing-masing paket data harus berbeda dari punya temennya. 
 2. Buatlah laporan dokumentasi dari hasil paket data yang disimpan tersebut, dan berikan keterangan apa yang dapat Anda pahami dari paket data itu.
