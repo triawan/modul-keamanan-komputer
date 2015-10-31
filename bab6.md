@@ -13,4 +13,9 @@ Pada bahasa pemrograman python, untuk membuat socket menggunakan fungsi socket.s
 
 Deskripsi parameter dari fungsi socket diatas adalah sebagai berikut:
 
-socket_family: socket.AF_INET, PF_PACKET
+```socket_family: socket.AF_INET, PF_PACKET```
+
+* AF_INET merupakan alamat untuk IPv4. 
+* PF_PACKET merupakan device driver layer. Umumnya merupakan library pcap yang digunakan pada linux.
+
+
