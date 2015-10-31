@@ -19,3 +19,8 @@ Deskripsi parameter dari fungsi socket diatas adalah sebagai berikut:
 * PF_PACKET merupakan device driver layer. Umumnya merupakan library pcap yang digunakan pada linux.
 
 
+## Cara Kerja Method Server Socket
+
+Dalam konsep arsitektur client-server, 
+
+
