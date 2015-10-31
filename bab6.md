@@ -26,7 +26,25 @@ Dalam konsep arsitektur client-server, terdapat dua layanan yang berbeda dari ma
 Beberapa metode pada fungsi socket di python, yaitu:
 * socket.bind(address): Method ini digunakan untuk menghubungkan alamat ip dengan nomor port ke socket. Socket harus dibuka dahulu sebelum terhubung dengan alamat tersebut.
 * socket.listen(q): Method ini akan memulai fase mendengarkan koneksi TCP. Argumen q mendefinisikan jumlah koneksi maksimum yang dapat ditangani server.
-* socket.accept(): Penggunaan method ini adalah untuk menerima koneksi yang dikirim dari client.
+* socket.accept(): Penggunaan method ini adalah untuk menerima koneksi yang dikirim dari client. Sebelum menggunakan method ini, method socket.bind(address) dan socket.listen(q) harus digunakan terlebih dahulu. Method socket.accept() akan mengembalikan dua nilai yaitu: client_socket dan address, dimana client_socket adalah objek socket baru yang digunakan untuk mengirim dan menerima data selama terhubung, dan address adalah alamat client.
+ 
+
+## Method Socket Client
+
+Method yang terdapat untuk fungsi di socket client adalah:
+
+socket.connect(address): Method ini untuk menghubungkan client ke server. Argumen address adalah alamat servernya.
+
+
+## Method Socket
+
+Beberapa fungsi yang terdapat pada method socket adalah sebagai berikut:
+
+
+
+
+
+
 
 
 
