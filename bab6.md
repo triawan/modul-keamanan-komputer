@@ -79,6 +79,9 @@ s.send("Hai Serverku.py, Clientku.py ingin berkomunikasi")
 s.close()
 ```
 
+Output dari kode program diatas adalah: 
+
+
 
 
 
