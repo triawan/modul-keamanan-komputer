@@ -55,6 +55,7 @@ Nama file : ```serverku.py```
 
 ```
 import socket
+
 host = "192.168.0.1" 
 port = 12345 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -70,6 +71,7 @@ Nama file : ```clientku.py```
 
 ```
 import socket
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = "192.168.0.1" 
 port =12345 
@@ -81,7 +83,38 @@ s.close()
 
 Output dari kode program diatas adalah: 
 
+![](server1.jpg)
+Gambar 6.1 Output Serverku.py
+
+![](client1.jpg)
+Gambar 6.2 Output Clientku.py
+
+Metode konektivitas client server diatas hanya untuk menangani satu permintaan yang dikirim oleh client. Apabila menginginkan server socket menangani lebih dari satu service, maka tinggal tambahkan looping setelah statement listen. 
+
+Berikut ini kode program lengkapnya :
+
+Nama file : ```serverku2.py```
+
+```
+import socket
+
+host = "0.0.0.0"
+port = 12345
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind((host, port))
+s.listen(2)
+while True:
+    conn, addr = s.accept()
+    print addr, "Now Connected"
+    conn.send("Thank you for connecting")
+    conn.close()
+
+```
+Output dari program diatas adalah sebagai berikut:
+
+![](server2.jpg)
+Gambar 6.3 Output serverku2.py dan clientku.py ketika dijalankan
 
 
-
+## Tugas Praktikum
 
