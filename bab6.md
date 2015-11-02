@@ -118,3 +118,5 @@ Gambar 6.3 Output serverku2.py dan clientku.py ketika dijalankan
 
 ## Tugas Praktikum
 
+Cobalah kode program diatas, kemudian lakukan percobaan dengan alamat IP yang berbeda dan berikan keterangan serta penjelasan maksud dari kode program tersebut.
+
